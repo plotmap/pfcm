@@ -13,6 +13,8 @@ def dataReader(pattern):
     """ The following function reads all data type specified for analysis
     """
     for file in glob.glob(pattern):
-        data=np.loadtxt(file, delimiter='\t', skiprow=3, dtype='object')
+        print("Reading file...", file)
+        data=np.genfromtxt(file, delimiter=',', missing_values='0')
         return data
-        
+if __name__=="__main__":
+    dataReader(pattern)
