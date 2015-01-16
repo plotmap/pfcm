@@ -1,0 +1,14 @@
+Earthquake Plotter
+using: basemap_plotter and data_download
+The two codes combined take user input to call data from USGS historical
+earthquake data archives and plot the results.
+Users can define a search area, timeframe and magnitude range within the
+input parameters. The code will then generate a search url for locating
+earthquakes from USGS, a resulting csv file will be downloaded. A map
+containing the earthquake locations will be plotted and displayed to the
+screen.
+Useage:
+$ python basemap_plotter
+Users will then be prompted to input various parameters
+Parameters can be input as intergers or floats.
+Apart from time which must be input as YYYY-MM-DD as prompted onscreen. 
